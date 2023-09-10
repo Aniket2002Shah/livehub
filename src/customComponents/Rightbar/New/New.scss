@@ -1,0 +1,83 @@
+.new{
+
+    -webkit-box-shadow:0px 0px 15px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow:0px 0px 15px 1px rgba(0,0,0,0.1);
+    box-shadow:0px 0px 15px 1px rgba(0,0,0,0.1);
+    padding: 0px 4px;
+    margin-top: 18px;
+    overflow: hidden;
+
+    .itemList{
+        display: flex;
+        align-items: center;
+        margin-top: 5px;
+        cursor: pointer;
+
+        .next,.prev{
+           font-size: 18px;
+        }
+
+        .listContainerBox{
+            overflow: hidden;
+            height: 160px;
+            display: flex;
+            align-items: center;
+            max-width: 343px;
+    
+            .listContainer::-webkit-scrollbar{
+                display: none;
+            }
+    
+           .listContainer{
+            display: flex;
+            overflow-x: scroll;
+            overflow-y: hidden;
+            margin-left: 4px;
+            margin-right: 4px;
+            gap: 13px;
+            scrollbar-width: none;
+            scroll-behavior: smooth;
+            transition: scroll 0.3s ease-in-out;
+            align-items: center;
+        }
+       }
+    }
+
+  }
+
+
+  .newItem{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    &:hover{
+        cursor: pointer;
+        background-color: aliceblue;
+    }
+    img{
+        width: 82px;
+        height: 98px;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+
+    .content{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+
+        .rating,.cost{
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .offer{
+        display: flex;
+        align-items: center;
+        font-size: 13px;
+        text-align: center;
+        color: red;
+    }
+}

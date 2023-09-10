@@ -1,0 +1,93 @@
+.purchase{
+    gap: 10px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    &:hover{
+        cursor: pointer;
+        background-color: aliceblue;
+    }
+    .purchaseWrapper{
+        display: flex;
+        gap: 5px;
+        .purchasePicture{
+            width: 57px;
+            height: 60px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+        .purchaseInfo{
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            .purchaseFirst{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                .purchaseTitle{
+                    font-size: 16px;
+                    font-weight: 600;
+                    display: flex;
+                    align-items: flex-end;
+                    .userPic{
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 10px;
+                    object-fit: cover;
+                    border: 1px solid rgb(231, 231, 231);
+                    }
+                    .purchaseTitleText{
+                        height: 20px;
+                        max-width: 210px;
+                        overflow: hidden;
+                    }
+                }
+                .purchasePrice{
+                font-size: 17px;
+                font-weight: 600;
+                color: #10A815;
+                }
+            }
+
+            .purchaseSec{
+                display: flex;
+                justify-content: space-between;
+                max-lines: 1;
+                font-size: 14px;
+                font-weight: 600;
+                align-items: center;
+    
+                .purchaseItemName{
+                    max-width: 210px;
+                    height: 20px;
+                    overflow: hidden;
+                    font-size: 15px;
+                    font-weight: 400;
+                   
+                }
+                .purchaseRating{
+                    display: flex;
+                    align-items: center;
+                }
+            }
+
+            .purchaseThird{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 12px;
+               
+                .purchaseStatus{
+                    display: flex;
+                    font-size: 12px;
+                    align-items: flex-end;
+                    color:#508DDD ;
+                }
+            }
+        }
+    }
+
+
+    .hrBar{
+        margin-top: 3px;
+        border: 1px solid rgba(241, 241, 241, 0.833);
+    }
+}

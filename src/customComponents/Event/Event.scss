@@ -1,0 +1,56 @@
+.event{
+    display: flex;
+    align-items: flex-start;
+    
+    &:hover{
+        cursor: pointer;
+        background-color: aliceblue;
+    }
+
+    .calendar{
+        width: 34px;
+        height: 35px;
+        text-align: center;
+        background-color: #D1D1D1;
+        padding: 2px 2px;
+        border-radius: 6px;
+        position: relative;
+
+        .date{
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 18px;
+            font-weight: 630;
+        }
+        .month{
+            position: absolute;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 13px;
+            top: 20px;
+            right: 0px;
+            left: 0px;
+        }
+    }
+
+    .content{
+        margin-left: 5px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 600;
+        .title{
+                font-size: 16px;
+                max-lines: 2;
+                text-align: start;
+
+            }
+        .desc{
+            display: flex;
+            align-items: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 11px;
+            font-weight: 500;
+            color: #707070;
+           row-gap: 1px;
+           column-gap: 12px;
+            flex-wrap: wrap;
+        }
+    }
+}

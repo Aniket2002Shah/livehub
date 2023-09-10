@@ -1,0 +1,14 @@
+.BuisnessProfileRightTop{
+    position: relative;
+    
+    .CompanySlogan{
+        position: absolute;
+        font-family: Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 20px;
+        font-style: italic;
+        bottom: 11px;
+        left: 50px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.1);
+    }
+}

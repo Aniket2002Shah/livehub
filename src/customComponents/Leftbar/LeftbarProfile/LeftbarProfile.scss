@@ -1,0 +1,177 @@
+.leftbarProfile{
+    position:sticky;
+    top: 62px;
+    padding: 15px 10px 32px 10px;
+    -webkit-box-shadow:0px 0px 15px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow:0px 0px 15px 1px rgba(0,0,0,0.1);
+    box-shadow:0px 0px 15px 1px rgba(0,0,0,0.1);
+    height: 245px;
+
+.userProfile{
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .userProfilePic{
+        top: 0;
+        position: absolute;
+        width: 60px;
+        height: 60px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 1px solid gray;
+    }
+
+    .user{
+        margin-left: 75px;
+
+        .username{
+            font-size: 22px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif
+        }
+       .userInfo{
+        display: flex;
+        gap: 8px;
+        align-items: center;
+        font-size: 14px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        font-weight: bold;
+
+        .followings{
+            margin-left: 16px;
+
+        }
+        .work{
+            margin-top: 16px;
+            .workText{
+                margin-left: 15px;
+            }
+        }
+    }
+}
+}
+
+.buisnessInfo{
+   margin-top: 14px;
+    .buisnessContainer{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    .buisnessContainerWrapper{
+        display: flex;
+        align-items: center;
+        margin-left: 10px;
+    .buisnessText{
+        font-size: 16px;
+        font-family:Helvetica, sans-serif;
+        font-weight: bold;
+
+    }
+    .buisnessAccNotify{
+        margin-left: 30px;
+        border-radius: 50%;
+        width: 15px;
+        height: 15px;
+        font-size: 12px;
+        background-color:rgb(41, 184, 45) ;
+        color: white;
+        text-align: center;
+        padding: 1px 2px 3px 2px;
+    }
+ }
+}
+
+.buisnessAccList{
+    display: flex;
+    align-items: center;
+    margin-top: 12px;
+    cursor: pointer;
+    margin-left: 7px;
+
+    .listContainerBox{
+        overflow: hidden;
+        height: 112px;
+        display: flex;
+        align-items: center;
+        max-width: 303px;
+
+        .listContainer::-webkit-scrollbar{
+            display: none;
+        }
+
+       .listContainer{
+        display: flex;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        margin-left: 4px;
+        margin-right: 4px;
+        gap: 13px;
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+        transition: scroll 0.3s ease-in-out;
+        align-items: center;
+    }
+   }
+  }
+ }
+}
+
+
+.numbers{
+    max-lines: 2;
+    max-width: 70px;
+    overflow: hidden;
+    font-weight: lighter;
+    font-size: 14px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+.buisnessItem{
+
+    width: 88px;
+    height: 108px;
+    border: 1px solid rgb(193, 193, 193);
+    border-radius: 5px;
+    position: relative;
+
+   .logo{
+    width: 88px;
+    height: 105px;
+    border-radius: 5px;
+    object-fit: cover;
+   }
+
+    .adminNotify{
+    position: absolute;
+    top: 0; 
+    color: rgb(41, 184, 45) ;
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    padding: 5px;
+    font-size: 10px;
+
+        .notify{
+        margin-left: 32px;
+        width: 11px;
+        height: 11px;
+        border-radius: 50%;
+        background-color:rgb(41, 184, 45) ;
+        color: white;
+        text-align: center;
+        padding: 1px 2px 2px 2px;
+            }
+        }
+    .companyName{
+    position: absolute;
+    bottom: 0;
+    margin-top: 36px;
+    padding: 2px;
+    font-size: 12px;
+    max-lines: 3;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.7);
+        }
+}

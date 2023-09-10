@@ -1,0 +1,251 @@
+.toolbar{
+    box-sizing:content-box;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 4px;
+    display: flex;
+    background-color: white;
+    align-items: center;
+    position: sticky;
+    top:0;
+    z-index: 9999;
+    border-bottom: 1px solid #6b6b6b46;
+
+      .toolbarLeft{
+       
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        .logo{
+            width: 30px;
+            height: 30px;
+            object-fit: cover;
+        }
+        span{font-weight: 500;
+            font-size: 23px;
+            font-family: 'Fredoka', sans-serif;
+            color: #c43fc4;
+        }
+        .search{
+          display: flex;
+          align-items: center;
+          gap: 3px;
+          height: 24px;
+          border-radius: 50px;
+          border: 1px solid #6b6b6b;
+          padding: 2px;
+          width: 198px;
+          margin-left: 10px;
+
+          .searchIcon{
+            height: 24px;
+            width: 28px;
+            fill: #6b6b6b;
+            cursor: pointer;
+          }
+
+          input{
+            border: none;
+            width: 500px;
+            background-color: transparent;
+            color: #6b6b6b;
+            font-size: 16px;
+
+            &:focus{
+                outline: none;
+            }
+        }
+      }  
+    }
+
+    .toolbarCentreWrapper{
+      height: 32px;
+      overflow: hidden;
+      padding-left: 7px;
+      padding-right: 10px;
+      padding-top: 2px;
+      padding-bottom: 2px;
+      display: flex;
+      align-items: center;
+      width: 715px;
+      margin-left: 100px;
+      margin-right: 100px;
+      // -webkit-box-shadow:0px 0px 15px 1px rgba(0,0,0,0.075);
+      // -moz-box-shadow:0px 0px 15px 1px rgba(0,0,0,0.075);
+      // box-shadow:0px 0px 15px 1px rgba(0,0,0,0.075);
+      // border: 0.8px solid rgba(128, 128, 128, 0.223);
+      // border-radius: 20px;
+
+      .toolbarCentre::-webkit-scrollbar{
+        display: none;
+      }
+      .toolbarCentre{
+      width: 100%;
+      display: flex;
+      overflow-x: scroll;
+      scrollbar-width: none;
+      cursor: pointer;
+      align-items: center;
+      gap: 72px;
+  
+      .tabLabel{
+        font-size: 11px;
+        font-family: Helvetica, sans-serif;
+        color: #c43fc4;
+        font-weight: 700;
+        text-transform: capitalize;
+      }
+      .item{
+        height:30px;
+        color: #6b6b6b;
+        padding: 0;
+        margin: 0;
+        }
+    }
+  }
+
+    .toolbarRight{
+        width: 450px;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .notificationListBox{
+          position: absolute;
+          top: 40px;
+          -webkit-box-shadow:0px 0px 15px 1px rgba(0,0,0,0.15);
+          -moz-box-shadow:0px 0px 15px 1px rgba(0,0,0,0.15);
+          box-shadow:0px 0px 15px 1px rgba(0,0,0,0.15);
+          max-height: calc(100vh - 100px);
+          background-color: white;
+          overflow-y: scroll;
+          overflow-x: hidden;
+          scrollbar-width: none;
+          &::-webkit-scrollbar{
+            display: none;
+          }
+          padding: 10px;
+          .notificationTitleText{
+            margin-bottom: 12px;
+            font-size: 19px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            margin-left: 5px;
+          }
+            .notificationList{
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              flex-direction: column;
+            }
+        }
+
+        .addPostBox{
+          position: absolute;
+          top: 40px;
+          -webkit-box-shadow:0px 0px 15px 1px rgba(0,0,0,0.15);
+          -moz-box-shadow:0px 0px 15px 1px rgba(0,0,0,0.15);
+          box-shadow:0px 0px 15px 1px rgba(0,0,0,0.15);
+          background-color: white;
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 8px;
+          padding: 10px;
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          .addPostItemBox{
+            width: 100%;
+            &:hover{
+              background-color: aliceblue;
+              cursor: pointer;
+            }
+          }
+
+        }
+
+      .toolbarRightStart{
+        align-items: center;
+
+        .filter{
+          margin-top: 1px;
+          padding: 2px;
+          box-sizing: content-box;
+          padding: 4px;
+          display: flex;
+          align-items: center;
+          background-color: #DCD6DC;
+          border-radius: 20px;
+          height: 25px;
+          width: 95px;
+          justify-content: space-around;
+          cursor: pointer;
+          .filterImg{
+            width: 20px;
+            height: 20px;
+            fill: #6b6b6b;
+          }
+          span{
+            color: #6b6b6b;
+          }
+          .dropdown{
+            margin-top: 4px;
+            width: 12px;
+            height: 12px;
+            fill: #6b6b6b;
+          }
+        }
+      }
+
+     .toolbarRightEnd{
+      align-items: center;
+      display: flex;
+      gap: 10px;
+
+      .createPost{
+        margin-top: 2px;
+        width: 25px;
+        height: 25px;
+        color: #c43fc4;
+        cursor: pointer;
+      }
+
+      .notification{
+        box-sizing: content-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5px;
+        background-color: #DCD6DC;
+        border-radius: 50%;
+        height: 22px;
+        width: 22px;
+        position: relative;
+      }
+
+      .messages{
+          box-sizing: content-box;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 5px;
+          background-color: #DCD6DC;
+          border-radius: 50%;
+          width: 22px;
+          height: 22px;
+          cursor: pointer;
+      }
+      .profilePicture{
+        img{
+          width: 32px;
+          height: 32px;
+          object-fit: cover;
+          border-radius: 50%;
+          border: 1px solid gray;
+        }
+      }
+     }
+    }
+
+}

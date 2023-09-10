@@ -1,0 +1,67 @@
+.mainBox{
+    display: flex;
+
+    .eventContainer{
+        flex: 1.8;
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+    .postContainer{
+        flex: 2;
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+    .jobContainer{
+        flex: 1.6;
+        margin-left: 5px;
+    }
+}
+
+
+.eventBuisnessAcc,.postBuisnessAcc,.jobBuisnessAcc{
+    -webkit-box-shadow:0px 0px 15px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow:0px 0px 15px 1px rgba(0,0,0,0.1);
+    box-shadow:0px 0px 15px 1px rgba(0,0,0,0.1);
+    text-align: center;
+    overflow-x: hidden;
+    padding: 4px 8px 0px 9px;
+    
+    height: calc(100vh);
+    position: sticky;
+    top: 0;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar{
+        display: none;
+      }
+
+    .eventBuisnessAccTitleBox,.postBuisnessAccTitleBox,.jobBuisnessAccTitleBox{
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 10px 10px 0;
+    .eventBuisnessAccTitle,.postBuisnessAccTitle,.jobBuisnessAccTitle{
+        display: flex;
+        align-items: flex-start;
+        font-size: 19px;
+
+        span{
+            margin-left: 10px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+        }
+    }
+    
+  }
+
+  .eventBuisnessAccList,.postBuisnessAccList,.jobBuisnessList{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 18px;
+    margin-bottom: 150px;
+  }
+}
+
+

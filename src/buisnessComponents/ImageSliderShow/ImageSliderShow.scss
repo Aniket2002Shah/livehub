@@ -1,0 +1,47 @@
+.slideshow{
+    flex: 5.4;
+    margin: 0 auto;
+    overflow: hidden;
+    height: 300px;
+    position: relative;
+}
+
+.slideshowSlider{
+    white-space: nowrap;
+    transition: ease 1000ms;
+}
+
+.slide{
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.slideshowDots{
+    position: absolute;
+    z-index: 2;
+    right: 600px;
+    bottom: 30px;
+    display: flex;
+    text-align: center;
+    gap: 7px;
+}
+
+.slideshowDot{
+    display: inline-block;
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #fbfbfb;
+}
+
+.slideshowDotactive{
+    display: inline-block;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: #716cf8;
+}

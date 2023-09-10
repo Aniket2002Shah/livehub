@@ -1,0 +1,43 @@
+.leftbarMenu{
+
+  height: calc(100vh - 407px);
+  position: sticky;
+  top: 379px;
+  overflow-y: scroll;
+  cursor: pointer;
+
+
+  -webkit-box-shadow:0px 0px 15px 1px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow:0px 0px 15px 1px rgba(0,0,0,0.1);
+  box-shadow:0px 0px 15px 1px rgba(0,0,0,0.1);
+  padding: 28px 10px 0px 10px;
+  margin-top: 18px;
+
+  &::-webkit-scrollbar{
+    display: none;
+  }
+
+   
+    .menuItemList{
+          .menuItemContainer{
+            &:hover{
+              background-color: aliceblue;
+            }
+           display: flex;
+           align-items: center;
+           margin-left: 10px;
+           margin-bottom: 30px;
+
+            .menuIcon{
+             width: 26px;
+             height: 26px;
+              object-fit: cover;
+          }
+          .menuName{
+            margin-left: 8px;
+            font-size: 17px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+          }
+       }
+     }
+}

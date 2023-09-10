@@ -1,0 +1,163 @@
+.dashboard{
+.dashboardWrapper{
+    display: flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    .dashboardMenu{
+        flex: 0.6;
+        display: flex;
+        flex-direction: column;
+        gap: 38px;
+        padding: 40px 5px 20px 10px;
+        background-color: #172B33;
+        color: white;
+        height: 100vh;
+        font-size: 13px;
+    }
+    .dashboardContent{
+        flex: 4.3;
+        .dashboardContentTop{
+            display: flex;
+            .dashboardContentTopRight{
+                flex: 3.3;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                -webkit-box-shadow:0px 0px 15px 1px rgba(0, 0, 0, 0.77);
+                -moz-box-shadow:0px 0px 15px 1px rgba(0,0,0,0.077);
+                box-shadow:0px 0px 15px 1px rgba(0,0,0,0.077);
+                padding: 10px 10px 0px 10px;
+           
+                margin-left: 15px;
+                margin-right: 7px;
+
+                .ChartTitle{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    .titleText{
+                    font-size: 18px;
+                    font-weight: 600;
+                    }
+                    .refresh{
+                        font-size: 13px;
+                        display: flex;
+                        align-items: center;
+                        margin-right: 20px;
+                    }
+                }
+                .label{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin-left: 20px;
+                    margin-right: 40px;
+                }
+                .dashBoardBarChart{
+                    height: 480px;
+                    width: 100%;
+                  }
+            }
+            .dashboardContentTopLeft{
+                flex: 1;
+                -webkit-box-shadow:0px 0px 15px 1px rgba(0, 0, 0, 0.077);
+                -moz-box-shadow:0px 0px 15px 1px rgba(0,0,0,0.077);
+                box-shadow:0px 0px 15px 1px rgba(0,0,0,0.077);
+                padding: 10px 10px 0px 10px;
+                box-sizing: border-box;
+                margin-left: 10px;
+                .doughnutTitle{
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-bottom: 15px;
+                }
+                .dashboardDoughnut{
+                    position: relative;
+                    width: 180px;
+                    height: 180px;
+                    .doughnutText{
+                        position: absolute;
+                        top: 65px;
+                        right: 0px;
+                        left: 0px;
+                        font-size: 17px;
+                        font-weight: 700;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                    }
+                }
+            }
+        }
+
+        .doughnutItemWrapper{
+            box-sizing: border-box;
+            height: 325px;
+            overflow: hidden;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            .doughnutItemList::-webkit-scrollbar{
+                display: none;
+              }
+        .doughnutItemList{
+            height: 325px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            overflow-y: scroll;
+            cursor: pointer;
+            scrollbar-width: none;
+
+        }
+     }
+
+     .dashboardContentBottom{
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        .currentMonthText,.todayText{
+            -webkit-box-shadow:0px 0px 15px 1px rgba(0, 0, 0, 0.045);
+            -moz-box-shadow:0px 0px 15px 1px rgba(0,0,0,0.045);
+            box-shadow:0px 0px 15px 1px rgba(0,0,0,0.045);
+            padding: 5px 12px 10px 10px;
+            border: 1px solid rgb(231, 231, 231);
+            box-sizing: border-box;
+            margin-right: 40px;
+            margin-left: 15px;
+            align-self: center;
+        }
+     }
+    }
+ }
+} 
+
+
+
+.dashboardItemBox{
+    display: flex;
+    align-items: center;
+    -webkit-box-shadow:0px 0px 15px 1px rgba(0, 0, 0, 0.045);
+    -moz-box-shadow:0px 0px 15px 1px rgba(0,0,0,0.045);
+    box-shadow:0px 0px 15px 1px rgba(0,0,0,0.045);
+    border: 1px solid rgb(231, 231, 231);
+    padding: 5px 12px 0px 10px;
+    box-sizing: border-box;
+    gap: 15px;
+
+    .symbol{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .symboltext{
+        font-size: 11px;
+        font-weight: 600;
+    }
+
+    .symbolvalue{
+        font-size: 18px;
+        font-weight: 600; 
+    }
+}

@@ -1,0 +1,19 @@
+.descriptionBuisnessBox{
+    flex: 1.1;
+    height: calc(100vh - 100px);
+    position: sticky;
+    top: 0px;
+    overflow-y: scroll;
+    margin-top: 10px;
+    margin-left: 5px;
+    margin-right: 10px;
+
+    padding: 5px 10px 0px 10px;
+    -webkit-box-shadow:0px 0px 15px 1px rgba(0,0,0,0.1);
+    -moz-box-shadow:0px 0px 15px 1px rgba(0,0,0,0.1);
+    box-shadow:0px 0px 15px 1px rgba(0,0,0,0.1);
+
+    &::-webkit-scrollbar{
+        display: none;
+      }
+}

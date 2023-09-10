@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 20.839 24.161">
+  <g id="house_worker" data-name="house worker" transform="translate(1225.783 714)">
+    <g id="Group_82" data-name="Group 82" transform="translate(-1225.783 -703.997)">
+      <path id="Path_117" data-name="Path 117" d="M-1222.639-575.077v-9.478c-.179.082-.366.176-.567.29a6.92,6.92,0,0,0-.967.625,3.53,3.53,0,0,0-1.529,2.91v.4c-.027.963-.063,2.557-.08,3.451a1.665,1.665,0,0,0,.08.541v1.262Z" transform="translate(1225.783 589.235)" fill="#fff"/>
+      <path id="Path_118" data-name="Path 118" d="M-1065.242-579.484a2.806,2.806,0,0,0-.9-1.6,2.121,2.121,0,0,0-.613-.466,3.514,3.514,0,0,0-1.022-.445l-.293-.124v9.2h2.949v-5.654A3.543,3.543,0,0,0-1065.242-579.484Z" transform="translate(1085.962 587.077)" fill="#fff"/>
+      <path id="Path_119" data-name="Path 119" d="M-1176.828-622.715a1.672,1.672,0,0,1-.85-1.453h0c0-.254.036-.877.068-1.645a3.41,3.41,0,0,1-2.678,1.68,3.13,3.13,0,0,1-2.443-1.424,12.705,12.705,0,0,1,.106,1.317c0,.059-.005.119-.008.178a1.668,1.668,0,0,1-.8,1.354c-.208.127-.446.26-.709.391a9.912,9.912,0,0,1-1.928.708v2.922h12.024v-2.742C-1175.1-621.878-1176.207-622.363-1176.828-622.715Z" transform="translate(1190.577 625.813)" fill="#fff"/>
+    </g>
+    <g id="Group_83" data-name="Group 83" transform="translate(-1221.035 -714)">
+      <path id="Path_120" data-name="Path 120" d="M-1166.513-709.122h-9.415l.794-4.878h7.713Z" transform="translate(1176.835 714)" fill="#fff"/>
+      <rect id="Rectangle_3" data-name="Rectangle 3" width="11.343" height="1.021" transform="translate(0 5.218)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

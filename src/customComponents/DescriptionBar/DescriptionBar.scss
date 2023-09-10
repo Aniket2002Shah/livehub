@@ -1,0 +1,75 @@
+.descriptionBar{
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 5px;
+
+
+        .statusContainer{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+
+            .activeBox{
+                color: #3BD655;
+            }
+            .editBox{
+                color: #508DDD;
+            }
+        }
+
+        .descriptionContainer{
+            margin-bottom: 100px;
+
+        .descriptionContainerTop{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .categoryIcon,.follow,.paymentIcon,.message{
+                padding: 4px;
+                border-radius: 6px;
+                color: white;
+            }
+
+        }
+
+        .descriptionContainerBottom,.links{
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            font-size: 14px;
+            .workBox,.descBox,.locationBox,.scheduleBox,.cityBox,.phoneBox,.emailBox,.link,.genderBox{
+                display: flex;
+                align-items:flex-start;
+                gap: 8px;
+            }
+
+            .jobItemListBox{
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .otherLinks{
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                gap: 20px;
+            }
+
+            .scheduleBox{
+                position: relative;
+                .clock{
+                    position: absolute;
+                    top: 15px;
+                }
+                .scheduleList{
+                    margin-left: 12px;
+                }
+
+            }
+
+        }
+            
+    }
+}
